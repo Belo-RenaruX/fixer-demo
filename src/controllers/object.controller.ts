@@ -8,11 +8,11 @@ export interface IObjectController {
 
 export class ObjectController implements IObjectController {
   constructor(
-    private readonly obejctInteractor: IObjectInteractor,
+    private readonly objectInteractor: IObjectInteractor,
   ) {}
 
   async handle(input: FastifyRequest, reply: FastifyReply): Promise<void> {
-    const result = await this.obejctInteractor.execute(input);
+    const result = await this.objectInteractor.execute(input);
     reply.code(200).send({ response: result });
   }
 }
