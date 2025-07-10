@@ -1,0 +1,20 @@
+{
+  "name": "fixer-demo",
+  "version": "1.0.0",
+  "description": "Demo ts server",
+  "author": "Renato Berrocal <r.berrocal@globant.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "tsx src/server.ts"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.12",
+    "tsx": "^4.20.3",
+    "typescript": "^5.8.3"
+  },
+  "dependencies": {
+    "@fastify/cors": "^11.0.1",
+    "dayjs": "^1.11.13",
+    "fastify": "^5.4.0"
+  }
+}
